@@ -1,14 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image DPI Changer</title>
-    <script type="module" src="/main.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <input type="file" name="image-upload" id="image-upload" multiple  >
-    <a href="" download="" id="link">Download</a>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./public/logo.svg" type="image/x-icon">
+  <title>Image DPI Changer</title>
+  <script type="module" src="/main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="./logo.svg" alt="" class="logo">
+    <h1>Image DPI Changer</h1>
+    <div class="input">
+      <input type="file" name="image-upload" id="image-upload" multiple>
+      <progress value="0" max="100"></progress>
+      <input type="number" placeholder="Enter DPI: Default 300" id="dpi-number">
+      <button type="button" id="downloadall"> Download all</button>
+      <p>Make sure that you have multiple files downloads enabled to use download all feature.</p>
+    </div>
+
+    <div id="download"></div>
+  </div>
+  <footer>
+    Made by &nbsp;<a href="https://www.linkedin.com/in/hamza-ihsan/"> Hamza Ihsan &nbsp;</a> ❤️ 🎉.
+  </footer>
+</body>
+
 </html>
