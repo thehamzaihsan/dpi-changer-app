@@ -92,3 +92,7 @@ button{
   padding: 0.25rem;
   width: fit-content;
 }
+
+.input p{
+  text-align: center;
+}
