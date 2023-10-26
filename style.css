@@ -91,6 +91,7 @@ button{
 #dpi-number{
   padding: 0.25rem;
   width: fit-content;
+  min-width: 12rem;
 }
 
 .input p{
